@@ -1,4 +1,13 @@
 {
+  "redirects": [
+    { "source": "/x402", "destination": "https://akca.network/x402", "permanent": false },
+    { "source": "/akcavpn", "destination": "https://akca.network/akcavpn", "permanent": false },
+    { "source": "/catalyst", "destination": "https://akca.network/catalyst", "permanent": false },
+    { "source": "/x", "destination": "https://x.com/AkcaNetwork", "permanent": false },
+    { "source": "/github", "destination": "https://github.com/AkcaNetwork", "permanent": false },
+    { "source": "/discord", "destination": "https://discord.gg/akca", "permanent": false },
+    { "source": "/telegram", "destination": "https://t.me/akcanetwork", "permanent": false }
+  ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ],
