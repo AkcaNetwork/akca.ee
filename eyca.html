@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AkcaVPN × EYCA — Coming Soon</title>
+<meta name="description" content="A special AkcaVPN deal for European Youth Card holders is on its way. Coming soon." />
+<meta name="theme-color" content="#0a0a0f" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://akca.ee/eyca" />
+<meta property="og:title" content="AkcaVPN × EYCA — Coming Soon" />
+<meta property="og:description" content="A special AkcaVPN deal for European Youth Card holders is on its way." />
+<meta property="og:image" content="https://akca.ee/assets/og-image.png" />
+<meta property="og:site_name" content="Akca" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@AkcaNetwork" />
+<meta name="twitter:title" content="AkcaVPN × EYCA — Coming Soon" />
+<meta name="twitter:description" content="A special AkcaVPN deal for European Youth Card holders is on its way." />
+<meta name="twitter:image" content="https://akca.ee/assets/og-image.png" />
+
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+<link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+
+:root {
+  --bg: #0a0a0f;
+  --border-hover: rgba(255,255,255,0.15);
+  --text: #ffffff;
+  --text-secondary: #a0aec0;
+  --text-muted: #718096;
+  --blue: #667eea;
+  --radius: 18px;
+}
+
+html {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter Tight', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* ── Unicorn Studio BG ── */
+.us-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ── Card ── */
+.container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 440px;
+  padding: 24px;
+}
+
+.card {
+  padding: 44px 36px 36px;
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, rgba(10,10,20,0.75), rgba(15,15,30,0.65));
+  backdrop-filter: blur(32px) saturate(1.3);
+  -webkit-backdrop-filter: blur(32px) saturate(1.3);
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 18px;
+}
+
+.card-logo {
+  height: 30px;
+  width: auto;
+  object-fit: contain;
+}
+
+.pair {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.soon {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(102,126,234,0.35);
+  background: rgba(102,126,234,0.1);
+  color: var(--blue);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.soon i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: currentColor;
+  animation: pulse 1.6s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%,100% { opacity: 1; }
+  50% { opacity: .25; }
+}
+
+.desc {
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  max-width: 320px;
+}
+
+.cta {
+  margin-top: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 26px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(102,126,234,0.25), rgba(118,75,162,0.25));
+  border: 1px solid rgba(102,126,234,0.3);
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.cta:hover {
+  transform: translateY(-2px);
+  border-color: var(--border-hover);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.5), 0 0 30px rgba(102,126,234,0.15);
+}
+
+.footer {
+  margin-top: 28px;
+  text-align: center;
+  font-size: 11px;
+  color: var(--text-muted);
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+.footer a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer a:hover { color: var(--text-secondary); }
+
+/* ── Animations ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.card > * { animation: fadeUp 0.6s ease-out both; }
+.card > :nth-child(1) { animation-delay: 0.05s; }
+.card > :nth-child(2) { animation-delay: 0.12s; }
+.card > :nth-child(3) { animation-delay: 0.19s; }
+.card > :nth-child(4) { animation-delay: 0.26s; }
+.card > :nth-child(5) { animation-delay: 0.33s; }
+.card > :nth-child(6) { animation-delay: 0.4s; }
+
+@media (max-width: 480px) {
+  .card { padding: 36px 24px 30px; }
+  h1 { font-size: 26px; }
+}
+</style>
+</head>
+<body>
+
+<!-- Unicorn Studio Background -->
+<div class="us-bg" data-us-project="Uo25hnRJG08SwYvZGPmX" data-us-scale="1" data-us-dpi="1.5" data-us-lazyload="true" data-us-production="true"></div>
+
+<!-- Main Content -->
+<div class="container">
+  <div class="card">
+    <img src="assets/akcavpn-white-logo.png" alt="AkcaVPN" class="card-logo">
+    <div class="pair">AkcaVPN &times; EYCA</div>
+    <h1>Something for<br>young Europeans.</h1>
+    <span class="soon"><i></i>Coming soon</span>
+    <p class="desc">A special AkcaVPN deal for European Youth Card holders is on its way. Fast, private internet &mdash; no email, no account, just a serial.</p>
+    <a class="cta" href="https://www.akcavpn.com" rel="noopener">Meet AkcaVPN &rsaquo;</a>
+  </div>
+  <div class="footer">
+    <a href="https://akca.network">akca.network</a>
+  </div>
+</div>
+
+<!-- Unicorn Studio SDK -->
+<script>!function(){var u=window.UnicornStudio;if(u&&u.init){if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",function(){u.init()})}else{u.init()}}else{window.UnicornStudio={isInitialized:!1};var i=document.createElement("script");i.src="https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v2.1.9/dist/unicornStudio.umd.js",i.onload=function(){if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",function(){UnicornStudio.init()})}else{UnicornStudio.init()}},(document.head||document.body).appendChild(i)}}();</script>
+
+</body>
+</html>
