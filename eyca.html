@@ -109,10 +109,21 @@ body {
 }
 
 h1 {
-  font-size: 30px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 44px;
   font-weight: 700;
   letter-spacing: -0.02em;
-  line-height: 1.15;
+  line-height: 1.1;
+  margin: 8px 0;
+}
+h1 .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--blue);
+  animation: pulse 1.6s ease-in-out infinite;
 }
 
 .soon {
@@ -217,9 +228,7 @@ h1 {
   <div class="card">
     <img src="assets/akcavpn-white-logo.png" alt="AkcaVPN" class="card-logo">
     <div class="pair">AkcaVPN &times; EYCA</div>
-    <h1>Something for<br>young Europeans.</h1>
-    <span class="soon"><i></i>Coming soon</span>
-    <p class="desc">A special AkcaVPN deal for European Youth Card holders is on its way. Fast, private internet &mdash; no email, no account, just a serial.</p>
+    <h1><span class="dot"></span>Soon</h1>
     <a class="cta" href="https://www.akcavpn.com" rel="noopener">Meet AkcaVPN &rsaquo;</a>
   </div>
   <div class="footer">
