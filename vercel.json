@@ -1,6 +1,11 @@
 {
   "redirects": [
     {
+      "source": "/summit",
+      "destination": "https://www.akcavpn.com/summit/create",
+      "permanent": false
+    },
+    {
       "source": "/x402",
       "destination": "https://akca.network/x402",
       "permanent": false
