@@ -6,6 +6,11 @@
       "permanent": false
     },
     {
+      "source": "/code1",
+      "destination": "https://www.akcavpn.com/code1/",
+      "permanent": false
+    },
+    {
       "source": "/x402",
       "destination": "https://akca.network/x402",
       "permanent": false
